@@ -8,7 +8,7 @@ redirect_from:
 ---
 # Curriculum Vitae
 
-[📄 Download My CV](/files/MKW_CV.pdf/) (last updated: Apr, 2025)
+[📄 Download My CV](../files/MKW_CV.pdf/) (last updated: Apr, 2025)
 
 Education
 ======
