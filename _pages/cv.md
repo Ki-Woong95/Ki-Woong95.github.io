@@ -6,7 +6,6 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-# Curriculum Vitae
 
 [📄 Download My CV](../files/MKW_CV.pdf/) (last updated: Apr, 2025)
 
