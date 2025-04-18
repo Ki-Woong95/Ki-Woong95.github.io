@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ki Woong Moon / Personal Website"
+title                    : "Ki Woong Moon"
 title_separator          : "-"
 name                     : &name "Ki Woong Moon"
 description              : &description "PhD student in Linguistics at University of Arizona"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ki Woong's Account"
+  name             : "Ki Woong Moon"
   avatar           : "profile.png"
   bio              : "PhD student in linguistics ; MS in Human Language Technology"
   location         : "Tucson, Arizona"
