@@ -1,16 +1,23 @@
 ---
 permalink: /
-title: "This is a ready-to-use GitHub Pages template for UAZHLT professional websites"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+## 👋 About Me
 
-This is the front page of a website that is powered by the [AcademicPages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from [the AcademicPages repository](https://github.com/academicpages/academicpages.github.io), which itself was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then tailored to the components required for the UAZHLT professional website: two HLT projects within a portfolio, the potential for blog posts, and a dynamically-generated CV. You can create your own repository from this template, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free.
+Hello! I’m **Ki Woong Moon**, a third-year Ph.D. student in **Linguistics** at the University of Arizona, where I’m also beginning my journey toward a **Master’s in Human Language Technology (HLT)**.
 
-This particular file should hold your professional introduction. It can be edited in `_pages/about.md`. You don't need to save any of the page *content* that was here, since it is recoverable from [the template](https://github.com/uazhlt/professionalGHpages.github.io), should you need it.
+My research lives at the intersection of **phonetics**, **speech technology**, and **computational linguistics**. I’m especially interested in utilizing speech features into computational model to enhance the performance. Also, I am deeply intrigued in analyzing speech data using statistical method to answer fascinating questions that we haven't answered.
+
+Lately, I’ve been diving deep into the phenomenon of **speech reduction** and exploring ways to adapt ASR models to more accurately interpret reduced and variable speech patterns. My goal is to bridge the gap between messy human speech and machine understanding.
+
+🧠 Always curious. 🎙️ Always listening. 🛠️ Always building.
+
+
 
 What should be on this site
 ======
