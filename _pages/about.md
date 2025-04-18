@@ -7,15 +7,14 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## 👋 About Me
+## 👀 Hello! I’m **Ki Woong Moon**, 
 
-Hello! I’m **Ki Woong Moon**, a third-year Ph.D. student in **Linguistics** at the University of Arizona, where I’m also beginning my journey toward a **Master’s in Human Language Technology (HLT)**.
+Im a third-year Ph.D. student in **Linguistics** at the University of Arizona, where I’m also beginning my journey toward a **Master’s in Human Language Technology (HLT)**.
 
-My research lives at the intersection of **phonetics**, **speech technology**, and **computational linguistics**. I’m especially interested in utilizing speech features into computational model to enhance the performance. Also, I am deeply intrigued in analyzing speech data using statistical method to answer fascinating questions that we haven't answered.
+My research lives at the intersection of **phonetics**, **speech technology**, and **computational linguistics**. I’m especially interested in utilizing speech features into computational model to enhance the performance. Also, I am deeply intrigued in analyzing speech data using statistical methods to answer fascinating questions we haven't answered.
 
 Lately, I’ve been diving deep into the phenomenon of **speech reduction** and exploring ways to adapt ASR models to more accurately interpret reduced and variable speech patterns. My goal is to bridge the gap between messy human speech and machine understanding.
 
-🧠 Always curious. 🎙️ Always listening. 🛠️ Always building.
 
 
 
