@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.A. in English, Hankuk University of Foreign Studies, Seoul, South Korea, 2020
-* M.A. in English Linguistics, Hankuk University of Foreign Studies, Seoul, South Korea, 2022
 * Ph.D in Linguistics, University of Arizona, 2027 (expected)
+* M.S. in Human Language Technology, University of Arizona, 2025 (expected)
+* M.A. in English Linguistics, Hankuk University of Foreign Studies, Seoul, South Korea, 2022
+* B.A. in English, Hankuk University of Foreign Studies, Seoul, South Korea, 2020
 
 # Teaching Experience 📚
 
