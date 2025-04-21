@@ -4,6 +4,7 @@ excerpt: "Short description of the goals and content of your internship<br/><img
 collection: portfolio
 ---
 
+___
 This is an item in your portfolio that describes your internship. It can have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.
 
 As you're describing the content of your internship, be sure to describe how you were able to apply the concepts and skills you acquired from HLT courses to your internship. You'll also want to describe the things that you learned from the internship itself that might help you in future work.
