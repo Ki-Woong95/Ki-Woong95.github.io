@@ -32,9 +32,9 @@ ___
 ### Summary of the project 
 
 As a native Korean speaker, Koreans have an unique ability in ciphering abnormal Korean texts into standard Korean. For the past few years, Koreans used various methods to write negative reviews on foreign websites, such as Airbnb and Google Map, to make hosts difficult to translate into their L1 language using Google Translator or other Machine Learning Translation tools. For example, if a Korean wants to write a bad review for a restaurant due to its awful services, they might writ the review as "이 싞땅운 넘뮤 뷸칞젏핽엵" (which in standard Korean would be "이 식당은 너무 불친절해요",meaning "this resaturant is very unfriendly"). This transformation of orthogrphy would make non-native speakers of Korean hard to interpret even they use the machine translation tools that are available on several websites. Here is an example of the result in the Google Translate website.
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+
   <img src="../images/google_translation.png" width="500" />
-</div>
+
 
 As shown in the above image, the machine translation shows totally different prediction, which indicates that this issue is still an unsolved area in computational field. Recently, OpenAI uploaded a video clip which uses OpenAI o1 model to cipher these corrupted Korean sentences (https://www.youtube.com/watch?v=eZDmDn6Iq9Y&ab_channel=OpenAI). It showed a quite successful results but it was not a tranlsation task but inferring what the standard Korean would be based on the corrupted sentence. 
 Although the sentence written by the reviewer is not a standard Korean that we usually use in our daily life, most of Koreans would understand what the meaning of sentence is without any learning what the transformation rules are. Based on this interesting fact, the present project aims to investigate whether fine-tuning pre-trained language model (mT5) with transformation texts would improve its translation from Korean scrambled texts to English. If it could succeed, it would shed a light in translating low-resource language to English.
@@ -113,10 +113,8 @@ Lastly, the current project utilized fine-tuning pre-trained model with applying
 | Revised Model       | 3.5117          | 2.6651              | 3536.8129         |28.2062                 |
 
 
-<div style={{ display: 'flex', justifyContent: 'center' }}>
   <img src="../images/train_loss.png" width="500" />
   <img src = "../images/eval_loss.png" width="500"/>
-</div>
 
 ### Comparsions between fine-tuned models and base (mT5) model
 |  Model              | CHRF score      |Improved over Base model|
@@ -160,15 +158,15 @@ To check whether the model could translate Korean corrupted texts to English cor
 Average Word count | 23.79| 11.64|
 
 Based on the average word count, the prediction showed significantly lower word count indicating that huge omissions occurred during the translation.
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+
   <img src="../images/hist.png" width="500" />
-</div>
+
 
 After analyzing the average word count for each token, the project computed the Levenshtein edit distance using `nltk` library between predictions and references. This indicates the number of insertions, deletions or substtitutions required to convert one string into another.
 The average edit distance was 110.26 which is a high edit distance. This indicates that the model's predictions are quite different from the reference translations, suggesting that the model is generating a lot of incorrect words, has significant omissions or additions in the predictions, and consequently failed to align with the reference text both semantically and syntactically.
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+
   <img src="../images/distance.png" width="500" />
-</div>
+
 
 
 ## Reproducibility
