@@ -1,8 +1,9 @@
 ---
 title: "Fine-tuning LM for translating Korean typoglycemia"
-excerpt: "This is a course proejct for LING582 focusing on whether pre-trained LLM could interpret Korean typoglycemia with fine-tuning <br/><img src="/images/pf2/typo.png" width="500" /><br/><img src="/images/google_translation.png" width="500" />"
+excerpt: "This is a course project for LING582 focusing on whether pre-trained LLM could interpret Korean typoglycemia with fine-tuning <br/><img src=\"/images/pf2/typo.png\" width=\"500\" /><br/><img src=\"/images/google_translation.png\" width=\"500\" />"
 collection: portfolio
 ---
+
 ___
 
 ### Summary of the project 
