@@ -114,8 +114,8 @@ Lastly, the current project utilized fine-tuning pre-trained model with applying
 
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
-  <img src="./images/train_loss.png" width="500" />
-  <img src = "./images/eval_loss.png" width="500"/>
+  <img src="../images/train_loss.png" width="500" />
+  <img src = "../images/eval_loss.png" width="500"/>
 </div>
 
 ### Comparsions between fine-tuned models and base (mT5) model
