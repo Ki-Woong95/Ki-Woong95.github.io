@@ -91,12 +91,14 @@ Lastly, the current project utilized fine-tuning pre-trained model with applying
   <img src="/images/pf2/train_loss.png" width="500" />
   <img src = "/images/pf2/eval_loss.png" width="500"/>
 
-### Comparsions between fine-tuned models and base (mT5) model
-|  Model              | CHRF score      |Improved over Base model|
-|---------------------|-----------------      |-------------------|
-| Base Model          |       1.45  | 
-| fine-tuned with base feature Model       |     10.15|+8.7|
-| fine-tuned with revised feature model | 16.84|+15.39|
+### Comparisons between Fine-Tuned Models and Base (mT5) Model
+
+| Model                               | CHRF Score | Improvement Over Base Model |
+|-------------------------------------|------------|------------------------------|
+| Base Model                          | 1.45       | —                            |
+| Fine-Tuned with Base Feature Model  | 10.15      | +8.70                        |
+| Fine-Tuned with Revised Feature Model | 16.84      | +15.39                       |
+
 
 
 Compared to the base mT5 model, fine-tuning with the synthetic datset helped the performance of the model significantly. However, even with the fine-tuning method, the performance of the model was not promising. 
