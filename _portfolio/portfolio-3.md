@@ -102,11 +102,11 @@ ___
 ## Results
 
 ### Results of based and stylometric model with augmented data
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+
   <img src="/images/pf3/Train_loss.png" width="400" />
   <img src="/images/pf3/Val_loss.png" width="400" />
   <img src="/images/pf3//Val_f1.png" width="400" />
-</div>
+
 
 As shown in the figures, the stylometric model performed better than the base model with the augemented data.
 
@@ -128,10 +128,10 @@ This indicates that the model may not be sensitive enough to correctly identify 
 
 In addition to analyzing the ratio of false negative and false positive, analysis on the distribution of stylometric features such as the average word length and the average span length was conducted.
 
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+
   <img src="/images/pf3/word.png" width="400" />
   <img src="/images/pf3/span.png" width="400" />
-</div>
+
 
 
 The density plots for both the average word length and average span legnth revealed patterns in the distribution of stylometric
