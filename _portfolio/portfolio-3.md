@@ -159,7 +159,4 @@ The current project examined whether stylometric features such as average word l
 given two spans are written by the same author or not. The error analysis suggested that these stylometric features show overlap between each span's distribution, indicating that these features
 may not increase the performance of the model significantly. As reported in https://aclanthology.org/2020.icon-main.16.pdf), the model which incorporated stylometric only showed 2.7% increase in F1 score.
 
-Future work could explore incorporating more complex stylometric or semantic features. Also, augmenting more data to solve the imbalanced distribution between each label would help the model. 
-_Describe how you might best improve your approach_
-
 
