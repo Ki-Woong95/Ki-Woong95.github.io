@@ -1,6 +1,6 @@
 ---
 title: "Improving authorship identification with stylometric features"
-excerpt: "This is a course competition project for LING582 focusing improving Authorship identification <br/><img src="/images/pf3/AA.png" width="500" />
+excerpt: "This is a course competition project for LING582 focusing improving Authorship identification <br/><img src="/images/pf3/AA.png" width="500" />"
 collection: portfolio
 ---
 ___
