@@ -5,7 +5,8 @@ date: 2024-12-07
 author: Ki Woong Moon
 description: "This is a course project for LING582 focusing on whether pre-trained LM (Language Model) could interpret Korean typoglycemia with fine-tuning."
 ---
-
+ <img src="/images/google_translation.png" width="500" />
+ 
 <table>
   <caption>
     Course Project Info
@@ -120,8 +121,8 @@ Lastly, the current project utilized fine-tuning pre-trained model with applying
 |  Model              | CHRF score      |Improved over Base model|
 |---------------------|-----------------      |-------------------|
 | Base Model          |       1.45  | 
-| fine-tuned with base feature Model       |     10.15|+8.7
-| fine-tuned with revised feature model | 16.84|+15.39
+| fine-tuned with base feature Model       |     10.15|+8.7|
+| fine-tuned with revised feature model | 16.84|+15.39|
 
 
 Compared to the base mT5 model, fine-tuning with the synthetic datset helped the performance of the model significantly. However, even with the fine-tuning method, the performance of the model was not promising. 
