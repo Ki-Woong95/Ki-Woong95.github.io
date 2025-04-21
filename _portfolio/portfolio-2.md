@@ -1,5 +1,5 @@
 ---
-title: "Your HLT Internship (with a much more explanatory title)"
+title: "Cours Project (LING582)"
 excerpt: "Short description of the goals and content of your internship<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
