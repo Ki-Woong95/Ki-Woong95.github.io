@@ -187,6 +187,20 @@ Test        41
 Dev         35
 Name: count, dtype: int64
 '''
+```
+While merging the Swahili data, an error occurred that the transcription (texts) exceeded the CSV field size limit. Therefore, an additional filtering was conducted by the following code:
+```python
+field_limit = 131072  # Default CSV field size limit
 
+# Filter rows without creating a new column
+merged = merged[merged['text'].str.len() <= field_limit]
+
+merged['split'].value_counts()
+'''
+split
+Train    30264 (3 items were removed from the Swahili dataset)
+Test        41
+Dev         35
+Name: count, dtype: int64'''
 
 ```
