@@ -1,6 +1,6 @@
 ---
 title: "Data collection and fine-tuning Whisper for low resources languages"
-excerpt: "This project focused on building audio data conversion and fine-tuning Whisper for low resource languages<br/><img src="/images/pf1/Whisper.png" width="500" />
+excerpt: 'This project focused on building audio data conversion and fine-tuning Whisper for low resource languages<br/><img src="/images/pf1/Whisper.png" width="500" />'
 collection: portfolio
 ---
 
