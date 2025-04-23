@@ -642,7 +642,7 @@ After the fine-tuning process, the result was reported to the XRI Global team by
 
 <img src="/images/pf1/Yo_test.png" />
 
-<img src="/images/pf1/Yo_test-cer.png" />
+<img src="/images/pf1/Yo-test-cer.png" />
 
 ## Building and Understanding ASR Systems
 This internship has been a highly rewarding journey in both technical depth and practical application. By working through the complete pipeline of Automatic Speech Recognition (ASR) model development—from raw data collection to fine-tuning and evaluation—I was able to deepen my understanding of both speech technology and multilingual modeling, particularly in the context of low-resource languages.
