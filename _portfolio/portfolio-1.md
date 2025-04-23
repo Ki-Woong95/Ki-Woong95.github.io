@@ -1,5 +1,5 @@
 ---
-title: "Data collection and fine-tuning Whisper for low resources languages"
+title: "Data collection and fine-tuning Whisper for low-resource languages"
 excerpt: 'This project focused on building audio data conversion and fine-tuning Whisper for low resource languages<br/><img src="/images/pf1/Whisper.png" width="500" />'
 collection: portfolio
 ---
@@ -251,11 +251,12 @@ Since providing the source code for the entire training process was restricted, 
 **Libraries and Tools used in the process**
 - `transformers`:  Whisper model and tokenizer handling
 - `datasets`: TSV-based dataset loading and mapping
+- `torch`: Core deep learning library; used for model optimization, tensor operations, and GPU acceleration during fine-tuning.
 - `torchaudio`: Audio loading and resampling
 - `evaluate` : WER and CER computation
 - `get_linear_schedule_with_warmup`: Learning rate scheduling
 - `tqdm`: progress tracking (optional for batch logging)
-`wandb`: For experiment tracking (loaded but not configured)
+- `wandb`: For experiment tracking (loaded but not configured)
 
 ```python 
 import os
@@ -645,24 +646,26 @@ After the fine-tuning process, the result was reported to the XRI Global team by
 <img src="/images/pf1/Yo-test-cer.png" />
 
 ## Building and Understanding ASR Systems
+
 This internship has been a highly rewarding journey in both technical depth and practical application. By working through the complete pipeline of Automatic Speech Recognition (ASR) model development—from raw data collection to fine-tuning and evaluation—I was able to deepen my understanding of both speech technology and multilingual modeling, particularly in the context of low-resource languages.
 
 📁 **Data Collection and Preprocessing**
+
 A major portion of the project focused on building a reliable and scalable data pipeline. I collected speech datasets from various open-source platforms such as Mozilla Common Voice and Mendeley Data. These datasets were often in inconsistent formats (e.g., .json, .mp3) and required preprocessing to meet Whisper's input requirements. I converted audio files into .wav format (16kHz), created aligned .tsv metadata files, and wrote scripts to calculate dataset durations and ensure compatibility.
 
 This phase gave me valuable hands-on experience with audio data handling, which includes manipulation of the data format, filtering incorrect tokens, and extracting audio information from the given directory.
 
 🤖 **Understanding and Fine-Tuning Whisper**
-Fine-tuning the Whisper model was the core of the internship. I worked with both whisper-base and whisper-large-v3-turbo to improve performance on ASR tasks. During this process, I encountered several challenges—including overly long audio inputs and limited data for certain languages like Chichewa. These problems were solved through:
 
-Custom duration filters (filter_toolong) to exclude out-of-bounds samples
+Fine-tuning the Whisper model was the core of the internship. I worked with both whisper-base and whisper-large-v3-turbo to improve performance on ASR tasks. During this process, I encountered several challenges—including overly long audio inputs and limited data for certain languages like Chichewa. These problems were solved through: 
 
-A transfer learning approach using Swahili (a high-resource Bantu language) to supplement Chichewa’s training data
+- Custom duration filters (filter_toolong) to exclude out-of-bounds samples.
+- A transfer learning approach using Swahili (a high-resource Bantu language) to supplement Chichewa’s training data.
 
 Through these tasks, I became proficient in modifying the training loop, integrating custom dataset loaders, using Hugging Face’s transformers, datasets, and evaluate libraries, and understanding Whisper’s architecture and decoding strategies.
 
 📊 **Experiment Tracking with WandB**
 
-The most valuable learning besides my main projects was utilizing experiment tracking with Weights & Biases (WandB). Before this internship, I had no idea how to effectively store, compare, and analyze the results and logs of my experiments. Due to the limited storage on my local machine, I often had to delete saved models, training logs, and evaluation metrics immediately after each run, which made it difficult to track progress or revisit past configurations.
+The most valuable learning besides my main projects was utilizing experiment tracking with Weights & Biases (WandB). Before this internship, I unfamiliar with how to effectively store, compare, and analyze the results and logs of my experiments. Due to the limited storage on my local machine, I often had to delete saved models, training logs, and evaluation metrics immediately after each run, which made it difficult to track progress or revisit past configurations.
 
 WandB provided a great solution where I could automatically log training curves, evaluation metrics like WER and CER, and even model checkpoints and code versions. This not only saved disk space but also allowed me to visualize training dynamics in real time, compare different runs across languages and model sizes, and share results with the team at XRI Global seamlessly. Through this experience, I gained a solid understanding of the importance of reproducibility and experiment tracking in machine learning workflows.

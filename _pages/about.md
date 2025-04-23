@@ -44,7 +44,7 @@ Skills 🖥️
 
 ### Languages:
   * Korean (native)
-  * English (profidient)
+  * English (proficient)
   * Chinese (basic)
 
 Work experience (since 2022) 🏢
