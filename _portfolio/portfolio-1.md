@@ -91,26 +91,27 @@ From the data collection and preprocessing steps, the following directories were
 - `language.tsv`: consist of file directories, transcription of the audio files and split
 
 The sample output of the process is given in the following table:
-| Filepath                                               | Text                                                                                      | Split |
-|--------------------------------------------------------|-------------------------------------------------------------------------------------------|-------|
-| validated_ha_wavs/common_voice_ha_29417456.wav         | Habibu da Hamsatu ba su kyauta min ba.                                                   | train |
-| validated_ha_wavs/common_voice_ha_26965630.wav         | Ina mamakin idan an kama Ishaku.                                                         | test  |
-| validated_ha_wavs/common_voice_ha_26736167.wav         | Kina sanye da kaya?                                                                      | train |
-| validated_ha_wavs/common_voice_ha_26736170.wav         | An gudanar da fatin bankwana jiya sabida Mr. Jones.                                      | train |
-| validated_ha_wavs/common_voice_ha_34998133.wav         | Bana jin Bitrus ne ya rubuta rahoton nan.                                                | train |
-| validated_ha_wavs/common_voice_ha_35001381.wav         | Kai ɗan jami’iyyar kwamunisanci ne ta United State ko kuma ka taɓa zamowa?              | train |
-| validated_ha_wavs/common_voice_ha_35001430.wav         | Kana tunanin da Aliko ya taimake mu?                                                     | train |
-| validated_ha_wavs/common_voice_ha_35119564.wav         | Dala daidai ta ke da ɗaruruwan centi.                                                    | dev   |
-| validated_ha_wavs/common_voice_ha_26701868.wav         | Ban taba kiran shi da wawa ba.                                                           | train |
-| validated_ha_wavs/common_voice_ha_26701869.wav         | Ban san yadda ake kamun kifi ba.                                                         | train |
-| validated_ha_wavs/common_voice_ha_26701870.wav         | An kama matashin ne da hannu cikin wani rikici.                                          | train |
-| validated_ha_wavs/common_voice_ha_26701872.wav         | Ina zama a wani ƙaramin ƙauye kilo mita hamsin tsakaninsu da birni.                      | test  |
-| validated_ha_wavs/common_voice_ha_26718709.wav         | Ba kwa buƙatar shirya wani muhimmini jawabi.                                             | dev   |
-| validated_ha_wavs/common_voice_ha_26718710.wav         | Abdullahi na daya daga cikin mamallakan wannan ginin.                                   | train |
-| validated_ha_wavs/common_voice_ha_26718712.wav         | Haƙiƙa bincikenka zai haifar da ɗa mai ido.                                              | train |
-| validated_ha_wavs/common_voice_ha_26718713.wav         | Karen, da yaga ba zai iya iso wajena ba, ya fara haushi.                                 | train |
-| validated_ha_wavs/common_voice_ha_26699728.wav         | Katin haɗe yake da kyautar.                                                              | train |
-| validated_ha_wavs/common_voice_ha_26699730.wav         | Ya zama ɗabi’ar matasa sanya takalmin fatarauta.                                         | train |
+
+| Filepath                                         | Text                                                                                     | Split |
+|--------------------------------------------------|------------------------------------------------------------------------------------------|-------|
+| validated_ha_wavs/common_voice_ha_29417456.wav  | Habibu da Hamsatu ba su kyauta min ba.                                                  | train |
+| validated_ha_wavs/common_voice_ha_26965630.wav  | Ina mamakin idan an kama Ishaku.                                                        | test  |
+| validated_ha_wavs/common_voice_ha_26736167.wav  | Kina sanye da kaya?                                                                     | train |
+| validated_ha_wavs/common_voice_ha_26736170.wav  | An gudanar da fatin bankwana jiya sabida Mr. Jones.                                     | train |
+| validated_ha_wavs/common_voice_ha_34998133.wav  | Bana jin Bitrus ne ya rubuta rahoton nan.                                               | train |
+| validated_ha_wavs/common_voice_ha_35001381.wav  | Kai ɗan jami’iyyar kwamunisanci ne ta United State ko kuma ka taɓa zamowa?              | train |
+| validated_ha_wavs/common_voice_ha_35001430.wav  | Kana tunanin da Aliko ya taimake mu?                                                    | train |
+| validated_ha_wavs/common_voice_ha_35119564.wav  | Dala daidai ta ke da ɗaruruwan centi.                                                   | dev   |
+| validated_ha_wavs/common_voice_ha_26701868.wav  | Ban taba kiran shi da wawa ba.                                                          | train |
+| validated_ha_wavs/common_voice_ha_26701869.wav  | Ban san yadda ake kamun kifi ba.                                                        | train |
+| validated_ha_wavs/common_voice_ha_26701870.wav  | An kama matashin ne da hannu cikin wani rikici.                                         | train |
+| validated_ha_wavs/common_voice_ha_26701872.wav  | Ina zama a wani ƙaramin ƙauye kilo mita hamsin tsakaninsu da birni.                     | test  |
+| validated_ha_wavs/common_voice_ha_26718709.wav  | Ba kwa buƙatar shirya wani muhimmini jawabi.                                            | dev   |
+| validated_ha_wavs/common_voice_ha_26718710.wav  | Abdullahi na daya daga cikin mamallakan wannan ginin.                                  | train |
+| validated_ha_wavs/common_voice_ha_26718712.wav  | Haƙiƙa bincikenka zai haifar da ɗa mai ido.                                             | train |
+| validated_ha_wavs/common_voice_ha_26718713.wav  | Karen, da yaga ba zai iya iso wajena ba, ya fara haushi.                                | train |
+| validated_ha_wavs/common_voice_ha_26699728.wav  | Katin haɗe yake da kyautar.                                                             | train |
+| validated_ha_wavs/common_voice_ha_26699730.wav  | Ya zama ɗabi’ar matasa sanya takalmin fatarauta.                                        | train |
 
 
 
