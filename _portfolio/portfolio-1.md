@@ -639,11 +639,11 @@ The sample output of the code is shown below:
 
 After the fine-tuning process, the result was reported to the XRI Global team by sharing the outcomes from the WandB. The figures below show the overall result of two different runs: one with the Whisper-base model and the other with the Whisper-large-turbo-v3 model.
 
-<img src="/images/pf1/Yo_train.png" />
+<img src="/images/pf1/yo_train_loss.png" />
 
-<img src="/images/pf1/Yo_test.png" />
+<img src="/images/pf1/yo_wer.png" />
 
-<img src="/images/pf1/Yo-test-cer.png" />
+<img src="/images/pf1/yo_cer.png" />
 
 ## Building and Understanding ASR Systems
 
