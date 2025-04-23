@@ -8,7 +8,7 @@ ___
 ## **Project Summary**
 This internship project focuses on developing a data processing pipeline for fine-tuning the state-of-the-art (SOTA) speech recognition model Whisper for low-resource languages, including various African, Indic, and South American languages. The project involves converting and organizing audio data into the appropriate format required for Whisper, and fine-tuning the model to enhance its performance. The final models are intended to be compatible with publicly available repositories such as Hugging Face and GitHub.
 
-## 1. **Audio data collection and preprocessing**
+## 📁 **Audio data collection and preprocessing**
 
 The initial goal of the project was to collect publicly available audio data. The primary sources included the Mozilla Common Voice corpus and various Hugging Face datasets. Given the low-resource nature of the target languages, additional datasets were sourced from platforms like Mendeley Data, which offers open-access resources for research.
 
@@ -116,7 +116,7 @@ The sample output of the process is given in the following table:
 
 These outcomes were then utilized into fine-tuning process which was a modified version of the existing `stagecoach` repo provided from the XRI Global team.
 
-## 2. **Finetuning Whisper for low resource languages**
+## 🎚️ **Finetuning Whisper for low resource languages**
 
 For my second project during my internship at XRI Global, I worked on adapting OpenAI's **Whisper** model for four African and one Indic languages: Yoruba, Chichewa, Hausa, Amharic, and Urdu. My role focused on outperforming existing benchmarks that were available in **Huggingface**.
 
@@ -633,7 +633,7 @@ if __name__ == "__main__":
 ```
 The sample output of the code is shown below:
 
-<img src="/images/pf1/Yo_out.png" />
+<img src="/images/pf1/yo_out.png" />
 
 After the fine-tuning process, the result was reported to the XRI Global team by sharing the outcomes from the WandB. The figures below show the overall result of two different runs: one with the Whisper-base model and the other with the Whisper-large-turbo-v3 model.
 
@@ -642,3 +642,26 @@ After the fine-tuning process, the result was reported to the XRI Global team by
 <img src="/images/pf1/Yo_test.png" />
 
 <img src="/images/pf1/Yo_test-cer.png" />
+
+## Building and Understanding ASR Systems
+This internship has been a highly rewarding journey in both technical depth and practical application. By working through the complete pipeline of Automatic Speech Recognition (ASR) model development—from raw data collection to fine-tuning and evaluation—I was able to deepen my understanding of both speech technology and multilingual modeling, particularly in the context of low-resource languages.
+
+📁 **Data Collection and Preprocessing**
+A major portion of the project focused on building a reliable and scalable data pipeline. I collected speech datasets from various open-source platforms such as Mozilla Common Voice and Mendeley Data. These datasets were often in inconsistent formats (e.g., .json, .mp3) and required preprocessing to meet Whisper's input requirements. I converted audio files into .wav format (16kHz), created aligned .tsv metadata files, and wrote scripts to calculate dataset durations and ensure compatibility.
+
+This phase gave me valuable hands-on experience with audio data handling, which includes manipulation of the data format, filtering incorrect tokens, and extracting audio information from the given directory.
+
+🤖 **Understanding and Fine-Tuning Whisper**
+Fine-tuning the Whisper model was the core of the internship. I worked with both whisper-base and whisper-large-v3-turbo to improve performance on ASR tasks. During this process, I encountered several challenges—including overly long audio inputs and limited data for certain languages like Chichewa. These problems were solved through:
+
+Custom duration filters (filter_toolong) to exclude out-of-bounds samples
+
+A transfer learning approach using Swahili (a high-resource Bantu language) to supplement Chichewa’s training data
+
+Through these tasks, I became proficient in modifying the training loop, integrating custom dataset loaders, using Hugging Face’s transformers, datasets, and evaluate libraries, and understanding Whisper’s architecture and decoding strategies.
+
+📊 **Experiment Tracking with WandB**
+
+The most valuable learning besides my main projects was utilizing experiment tracking with Weights & Biases (WandB). Before this internship, I had no idea how to effectively store, compare, and analyze the results and logs of my experiments. Due to the limited storage on my local machine, I often had to delete saved models, training logs, and evaluation metrics immediately after each run, which made it difficult to track progress or revisit past configurations.
+
+WandB provided a great solution where I could automatically log training curves, evaluation metrics like WER and CER, and even model checkpoints and code versions. This not only saved disk space but also allowed me to visualize training dynamics in real time, compare different runs across languages and model sizes, and share results with the team at XRI Global seamlessly. Through this experience, I gained a solid understanding of the importance of reproducibility and experiment tracking in machine learning workflows.
