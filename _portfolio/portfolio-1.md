@@ -645,7 +645,6 @@ After the fine-tuning process, the result was reported to the XRI Global team by
 
 <img src="/images/pf1/yo_cer.png" />
 
-As a result of the internship, XRI Global is going to update the overall performance of fine-tuned models on the language map website. This performance will be used as a guide for each language so that the public can find the latest performance scores of each language more easily.
 
 ## Building and Understanding ASR Systems
 
@@ -671,3 +670,7 @@ Through these tasks, I became proficient in modifying the training loop, integra
 The most valuable learning besides my main projects was utilizing experiment tracking with Weights & Biases (WandB). Before this internship, I was unfamiliar with how to effectively store, compare, and analyze the results and logs of my experiments. Due to the limited storage on my local machine, I often had to delete saved models, training logs, and evaluation metrics immediately after each run, which made it difficult to track progress or revisit past configurations.
 
 WandB provided a great solution where I could automatically log training curves, evaluation metrics like WER and CER, and even model checkpoints and code versions. This not only saved disk space but also allowed me to visualize training dynamics in real time, compare different runs across languages and model sizes, and share results with the team at XRI Global seamlessly. Through this experience, I gained a solid understanding of the importance of reproducibility and experiment tracking in machine learning workflows.
+
+## Future Direction of the project
+
+Fine-tuning the Whisper model with low-resource languages was a part of the bigger project ["Language Map for low-resource languages"](https://digitaldivide.ai). The main purpose of fine-tuning the Whisper model with different languages was to update and compare the performance of the fine-tuned models with existing models that can be found in *HuggingFace*, *Github*, or publicly available websites. By collecting and updating the AI model capabilities across the world's languages, XRI Global is expecting to bridge the digital divide and eventually establish foundational technology that supports all languages.
