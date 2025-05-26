@@ -1,12 +1,12 @@
 ---
 title: "Data collection and fine-tuning Whisper for low-resource languages"
-excerpt: 'This project focused on building audio data conversion and fine-tuning Whisper for low resource languages<br/><img src="/images/pf1/Whisper.png" width="500" />'
+excerpt: 'This project focused on building audio data conversion and fine-tuning Whisper for low-resource languages<br/><img src="/images/pf1/Whisper.png" width="500" />'
 collection: portfolio
 ---
 
 ___
 ## **Project Summary**
-This internship project focuses on developing a data processing pipeline for fine-tuning the state-of-the-art (SOTA) speech recognition model Whisper for low-resource languages, including various African, Indic, and South American languages. The project involves converting and organizing audio data into the appropriate format required for Whisper, and fine-tuning the model to enhance its performance. The final models are intended to be compatible with publicly available repositories such as Hugging Face and GitHub.
+This internship project focuses on developing a data processing pipeline for fine-tuning the state-of-the-art (SOTA) speech recognition model Whisper (https://github.com/openai/whisper) for low-resource languages, including various African, Indic, and South American languages. The project involves converting and organizing audio data into the appropriate format required for Whisper and fine-tuning the model to enhance its performance. The final models are intended to be compatible with publicly available repositories such as Hugging Face and GitHub.
 
 ## 📁 **Audio data collection and preprocessing**
 
@@ -14,7 +14,7 @@ The initial goal of the project was to collect publicly available audio data. Th
 
 Once collected, most of the audio files—especially those from Common Voice, which are typically in .mp3 format—were converted into .wav format, which is required by Whisper. Alongside the audio conversion, metadata files in .tsv format were generated. Each .tsv file included three key columns: filepath, text, and split (indicating whether the sample belongs to the training, validation, or test set).
 
-Although an earlier version of the dataset was available in .json format, additional processing was performed to convert these into the final .tsv format, ensuring compatibility with the Whisper training pipeline. The following source-code was used for file converstion from .json to .tsv.
+Although an earlier version of the dataset was available in .json format, additional processing was performed to convert these into the final .tsv format, ensuring compatibility with the Whisper training pipeline. The following source code was used for file conversation from .json to .tsv.
 
 **Libraries and Tools used in the process**
 - `json`: Parsing annotated audio datasets in structured format (from Common Voice)
@@ -53,7 +53,7 @@ with open(output_file, "w", encoding="utf-8", newline='') as tsvfile:
 print(f"Data successfully written to {output_file}")
 ```
 
-After converting the dataset, the number of hours per each of the dataset was calculated. This includes calculating the number of hours in all training, validation, and test datasets in each language.
+After converting the dataset, the number of hours of each dataset was calculated. This includes calculating the number of hours in all training, validation, and test datasets in each language.
 ```python
 import os
 import wave
@@ -87,8 +87,8 @@ print(f"Total duration of all .wav files: {total_duration_hours} hours, avg_dur 
 ## Results of the data collection and preprocessing
 
 From the data collection and preprocessing steps, the following directories were created:
-- `audio` folder with three subdirectories: `train`, `dev`, `val` containing `.wav` files with a Sampling Rate (SR) 16000
-- `language.tsv`: consist of file directories, transcription of the audio files and split
+- `audio` folder with three subdirectories: `train`, `dev`, `val` containing `.wav` files with a Sampling Rate (SR) 16kHz
+- `language.tsv`: consists of file directories, transcription of the audio files and split
 
 The sample output of the process is given in the following table:
 
@@ -115,9 +115,9 @@ The sample output of the process is given in the following table:
 
 
 
-These outcomes were then utilized into fine-tuning process which was a modified version of the existing `stagecoach` repo provided from the XRI Global team.
+These outcomes were then used in the fine-tuning process, which was a modified version of the existing `stagecoach` repo provided by the XRI Global team.
 
-## 🎚️ **Finetuning Whisper for low resource languages**
+## 🎚️ **Fine-tuning Whisper for low-resource languages**
 
 For my second project during my internship at XRI Global, I worked on adapting OpenAI's **Whisper** model for four African and one Indic languages: Yoruba, Chichewa, Hausa, Amharic, and Urdu. My role focused on outperforming existing benchmarks that were available in **Huggingface**.
 
@@ -125,7 +125,7 @@ For my second project during my internship at XRI Global, I worked on adapting O
 ### Language description
 
 **Yoruba**
-- Yoruba is a tonal language spoken by over 20 million people in Nigeria and neighboring countries. It features three distinct tones—high, mid, and low—that can change the meaning of words. The language also has a rich phonological system, including vowel length distinctions and nasalization.
+- Yoruba is a tonal language spoken by over 20 million people in Nigeria and neighboring countries. It is a Niger-Congo language.  It features three distinct tones—high, mid, and low—that can change the meaning of words. The language also has a rich phonological system, including vowel length distinctions and nasalization.
 - Total number of hours used in the fine-tuning: 5.13 hrs
 
 **Chichewa**
@@ -146,17 +146,17 @@ For my second project during my internship at XRI Global, I worked on adapting O
 **Urdu**
 
 - Urdu is an Indo-Aryan language spoken in Pakistan and India. It uses a modified Perso-Arabic script and shares a significant lexical base with Persian and Arabic. It has a rich poetic tradition and employs elaborate honorifics and register distinctions.
-- Total number of hours in the Common Voice: 82 validated hours; However, due to storage issue, 30,000 audio files were selected and used in the project.
+- Total number of hours in the Common Voice: 82 validated hours; However, due to storage issues, 17.47 hrs were selected and used for fine-tuning.
 
 
 ## Procedures
 
-From the collected data, I managed to fine-tune Whisper model using both my local-machine and remote GPU that was provided from the XRI Global. Since the amount of resources that can be used in my local machine was restricted, I first started with the `Whisper-base` model and expanded it with `Whisper-large-v3-turbo` for my remote GPU.
+From the collected data, I managed to fine-tune Whisper models using both my local machine and remote GPU that was provided from the XRI Global. Since the amount of resources that can be used in my local machine was restricted, I first started with the `Whisper-base` model and expanded it with `Whisper-large-v3-turbo` for my remote GPU.
 
 While fine-tuning Whisper model, several problems occurred. 
 
 ### Problem 1: Audio data too long for Whisper to process
-Some of the audio files that were collected from the Common Voice and other sources exceeded the limit of the system. Therefore, I added a `filter_toolong` function in the training configuration to handle excessively long duration of files from the collected audio files.
+Some of the audio files that were collected from the Common Voice and other sources exceeded the limit of the system. Therefore, I added a `filter_toolong` function in the training configuration to handle excessively long files from the collected audio files.
 
 ```python
 "filter_toolong": {
@@ -199,14 +199,14 @@ class ByLength(FilterBase):
         return True
 ```
 
-### Problem 2: No improvement on the performance due to limited data
+### Problem 2: No improvement in the performance due to limited data
 **Libraries and Tools used in the process**
 - `pandas`: Modification of the dataset and concatenating dataset for transfer learning
 
-After filtering the long audio files using the `filter_toolong`, I was able to train Whisper model with different languages. While fine-tuning Whisper on Chichewa, another problem occurred. As the training data was limited, the model did not perform well on the ASR task. Therefore, Tranfer learning approach was used to improve the performance of the model.
+After filtering the long audio files using the `filter_toolong`, I was able to train Whisper model with different languages. While fine-tuning Whisper on Chichewa, another problem occurred. As the training data was limited, the model did not perform well on the ASR task. Therefore, a transfer learning approach was used to improve the performance of the model.
 
-Since Chichewa is a Bantu language, I collected subset of Swahili dataset from the Common Voice which has an identical language family. Compared to Chichewa, Swahili is relatively high resource language which has a decent amount of audio data that can be used. After collecting the data, I utilized the preprocessing procedures and merged 30k of the audio files with the existing Chichewa dataset. In here, Swahili data was only used during the training, and Chichewa data was used for training, validation and testing.
-The below code demonstrates the merging steps between Chichewa and Swahili dataset. Total number of 46.2 hours of Swahili data were added to the training dataset of the Chichewa.
+Since Chichewa is a Bantu language, I collected a subset of the Swahili dataset from the Common Voice which has an identical language family. As they are in the same language family, they have similar noun class marking (using prefixes), and agglutinative structure that verbs are built with multiple prefixes and suffixes marking tense, etc. They also share some lexical items, such as "maji" in Swahili and "madzi" in Chichewa meaning "water". Compared to Chichewa, Swahili is a relatively high resource language that has a decent amount of audio data that can be used. After collecting the data, I utilized the preprocessing procedures and merged 30k of the audio files with the existing Chichewa dataset. Here, Swahili data was only used during the training, and Chichewa data was used for training, validation, and testing.
+The below code demonstrates the merging steps between the Chichewa and Swahili datasets. A total of 46.2 hours of Swahili data were added to the training dataset of the Chichewa.
 
 ```python
 import pandas as pd
@@ -246,7 +246,7 @@ After solving these problems I was able to train the Whisper model using the fol
 1. Whisper_fintune_language(Hausa, Chichewa, Amharic, Urdu, Yoruba).py
 2. run.py
 
-Since providing the source code for the entire training process was restricted, I implemented my own version of the code which follows the overall procedures that were provided in the `stagecoach` repo from the XRI Global. The following code was used for fine-tuning Whisper on Yoruba dataset. The result of the training was reported to `WandB`.
+Since providing the source code for the entire training process was restricted, I implemented my own version of the code which follows the overall procedures that were provided in the `stagecoach` repo from XRI Global. The following code was used for fine-tuning Whisper on the Yoruba dataset. The result of the training was reported to `WandB` (https://wandb.ai/site)/.
 
 **Libraries and Tools used in the process**
 - `transformers`:  Whisper model and tokenizer handling
@@ -645,6 +645,8 @@ After the fine-tuning process, the result was reported to the XRI Global team by
 
 <img src="/images/pf1/yo_cer.png" />
 
+As a result of the internship, XRI Global is going to update the overall performance of fine-tuned models on the language map website. This performance will be used as a guide for each language so that the public can find the latest performance scores of each language more easily.
+
 ## Building and Understanding ASR Systems
 
 This internship has been a highly rewarding journey in both technical depth and practical application. By working through the complete pipeline of Automatic Speech Recognition (ASR) model development—from raw data collection to fine-tuning and evaluation—I was able to deepen my understanding of both speech technology and multilingual modeling, particularly in the context of low-resource languages.
@@ -662,10 +664,10 @@ Fine-tuning the Whisper model was the core of the internship. I worked with both
 - Custom duration filters (filter_toolong) to exclude out-of-bounds samples.
 - A transfer learning approach using Swahili (a high-resource Bantu language) to supplement Chichewa’s training data.
 
-Through these tasks, I became proficient in modifying the training loop, integrating custom dataset loaders, using Hugging Face’s transformers, datasets, and evaluate libraries, and understanding Whisper’s architecture and decoding strategies.
+Through these tasks, I became proficient in modifying the training loop, integrating custom dataset loaders, using Hugging Face’s transformers, and datasets, and evaluating libraries, and understanding Whisper’s architecture and decoding strategies.
 
 📊 **Experiment Tracking with WandB**
 
-The most valuable learning besides my main projects was utilizing experiment tracking with Weights & Biases (WandB). Before this internship, I unfamiliar with how to effectively store, compare, and analyze the results and logs of my experiments. Due to the limited storage on my local machine, I often had to delete saved models, training logs, and evaluation metrics immediately after each run, which made it difficult to track progress or revisit past configurations.
+The most valuable learning besides my main projects was utilizing experiment tracking with Weights & Biases (WandB). Before this internship, I was unfamiliar with how to effectively store, compare, and analyze the results and logs of my experiments. Due to the limited storage on my local machine, I often had to delete saved models, training logs, and evaluation metrics immediately after each run, which made it difficult to track progress or revisit past configurations.
 
 WandB provided a great solution where I could automatically log training curves, evaluation metrics like WER and CER, and even model checkpoints and code versions. This not only saved disk space but also allowed me to visualize training dynamics in real time, compare different runs across languages and model sizes, and share results with the team at XRI Global seamlessly. Through this experience, I gained a solid understanding of the importance of reproducibility and experiment tracking in machine learning workflows.

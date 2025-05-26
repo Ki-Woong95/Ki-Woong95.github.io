@@ -16,7 +16,7 @@ Education
 * M.A. in English Linguistics, Hankuk University of Foreign Studies, Seoul, South Korea, 2022
 * B.A. in English, Hankuk University of Foreign Studies, Seoul, South Korea, 2020
 
-# Teaching Experience 📚
+<!-- # Teaching Experience 📚
 
 ### **University of Arizona, Department of Linguistics**
 **Graduate Teaching Associate**  
@@ -38,7 +38,7 @@ Education
    
 ### **Hankuk Academy of Foreign Studies Camp**, Dec 2018 - Feb 2019  
 - Taught English writing and speaking to 6th graders  
-- Designed curriculum and coached students for debate competitions
+- Designed curriculum and coached students for debate competitions -->
 
 
 # Work Experience 💼
@@ -75,3 +75,15 @@ Supervisor: Dr. Natasha Warner
 ## National Information Society Agency (NIA), Korea
 **Research Assistant**, Sep 2020 – Dec 2020  
 - Constructed discourse-level NLP datasets for AI model training
+
+# Skills 🖥️
+## Technical Skills:
+  * Languages: Bash, Praat, Python, Perl, R
+  * ASR/Machine Learning tools: Hugging Face🤗, Kaldi, Pytorch, WandB
+  * General: LaTeX, MacOS, Linux(Ubuntu), Windows
+  * Areas: Acoustic phonetics (speech production and perception), statistical analysis, natural language processing, audio signal processing
+
+### Languages:
+  * Korean (native)
+  * English (proficient)
+  * Chinese (basic)
