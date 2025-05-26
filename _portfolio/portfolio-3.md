@@ -67,7 +67,7 @@ During the preprocessing, each word in each span was transformed into its lemma.
 
 ### Stylometric features
 In addition to increasing the number of training data, the project utilized feature engineering to enhance the performance of the model. 
-Based on the paper which fine-tuned the BERT model for Authorship Attribution (https://aclanthology.org/2020.icon-main.16.pdf), the project extracted three stylometric features for each span:
+Based on the paper which fine-tuned [the BERT model for Authorship Attribution](https://aclanthology.org/2020.icon-main.16.pdf), the project extracted three stylometric features for each span:
 - **average word length**: The mean number of characters per word in a span
 - **average span length**: The average number of words in a span
 - **punctuation frequency**: The number of punctuation marks per unit of text.
@@ -156,6 +156,6 @@ Details of the methods and requirements are listed in the README.md on this [Git
 
 The current project examined whether stylometric features such as average word length, average span length, and frequency of punctuation could help a model which classifies whether
 given two spans are written by the same author or not. The error analysis suggested that these stylometric features show overlap between each span's distribution, indicating that these features
-may not increase the performance of the model significantly. As reported in the [article] (https://aclanthology.org/2020.icon-main.16.pdf), the model which incorporated stylometric features only showed a 2.7% increase in F1 score.
+may not increase the performance of the model significantly. As reported in the [article](https://aclanthology.org/2020.icon-main.16.pdf), the model which incorporated stylometric features only showed a 2.7% increase in F1 score.
 
 
