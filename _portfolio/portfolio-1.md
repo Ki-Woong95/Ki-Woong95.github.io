@@ -6,7 +6,7 @@ collection: portfolio
 
 ___
 ## **Project Summary**
-This internship project focuses on developing a data processing pipeline for fine-tuning the state-of-the-art (SOTA) speech recognition model Whisper (https://github.com/openai/whisper) for low-resource languages, including various African, Indic, and South American languages. The project involves converting and organizing audio data into the appropriate format required for Whisper and fine-tuning the model to enhance its performance. The final models are intended to be compatible with publicly available repositories such as Hugging Face and GitHub.
+This internship project focuses on developing a data processing pipeline for fine-tuning the state-of-the-art (SOTA) speech recognition model [Whisper] (https://github.com/openai/whisper) for low-resource languages, including various African, Indic, and South American languages. The project involves converting and organizing audio data into the appropriate format required for Whisper and fine-tuning the model to enhance its performance. The final models are intended to be compatible with publicly available repositories such as Hugging Face and GitHub.
 
 ## 📁 **Audio data collection and preprocessing**
 
@@ -14,7 +14,7 @@ The initial goal of the project was to collect publicly available audio data. Th
 
 Once collected, most of the audio files—especially those from Common Voice, which are typically in .mp3 format—were converted into .wav format, which is required by Whisper. Alongside the audio conversion, metadata files in .tsv format were generated. Each .tsv file included three key columns: filepath, text, and split (indicating whether the sample belongs to the training, validation, or test set).
 
-Although an earlier version of the dataset was available in .json format, additional processing was performed to convert these into the final .tsv format, ensuring compatibility with the Whisper training pipeline. The following source code was used for file conversation from .json to .tsv.
+Although an earlier version of the dataset was available in .json format, additional processing was performed to convert these into the final .tsv format, ensuring compatibility with the Whisper training pipeline. The following source code was used for file conversion from .json to .tsv.
 
 **Libraries and Tools used in the process**
 - `json`: Parsing annotated audio datasets in structured format (from Common Voice)
@@ -243,10 +243,10 @@ Name: count, dtype: int64'''
 ```
 
 After solving these problems I was able to train the Whisper model using the following two files:
-1. Whisper_fintune_language(Hausa, Chichewa, Amharic, Urdu, Yoruba).py
+1. Whisper_fintune_language (Hausa, Chichewa, Amharic, Urdu, Yoruba).py
 2. run.py
 
-Since providing the source code for the entire training process was restricted, I implemented my own version of the code which follows the overall procedures that were provided in the `stagecoach` repo from XRI Global. The following code was used for fine-tuning Whisper on the Yoruba dataset. The result of the training was reported to `WandB` (https://wandb.ai/site)/.
+Since providing the source code for the entire training process was restricted, I implemented my own version of the code which follows the overall procedures that were provided in the `stagecoach` repo from XRI Global. The following code was used for fine-tuning Whisper on the Yoruba dataset. The result of the training was reported to [WandB] (https://wandb.ai/site/)
 
 **Libraries and Tools used in the process**
 - `transformers`:  Whisper model and tokenizer handling

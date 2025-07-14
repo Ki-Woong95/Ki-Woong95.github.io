@@ -40,13 +40,13 @@ Work experience (since 2022) 🏢
   * Conducted speech perception experiment
   * Analyzed speech data using statistical method
   * Organized lab meeting
-  * Supervised undegraduate research assistants
+  * Supervised undergraduate research assistants
 
 ### Internship at XRI Global Inc (Jan 2025 - May 2025)
-  * Collecting publicly available speech data for low-resources languages (African, Southeast Asia, and South American)
-  * Preprocessing speech data and fine-tuning pre-trained model (e.g., Whisper) on low-resource languages
-  * Finding better approach to enhance the performance of the model (transfer learning, data augmentation)
-  * Evaluate the performance of the fine-tuned ASR model
+  * Collected publicly available speech data for low-resource languages (African, Southeast Asia, and South American)
+  * Preprocessed speech data and fine-tuning pre-trained model (e.g., Whisper) on low-resource languages
+  * Examined better approaches to enhance the performance of the model (transfer learning, data augmentation)
+  * Evaluated the performance of the fine-tuned ASR model
 
 
 

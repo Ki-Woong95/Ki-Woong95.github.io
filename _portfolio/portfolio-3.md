@@ -12,7 +12,7 @@ The task is basically binary classification, requiring a given token to be class
 - `0`: Two spans provided in the token are written by the same author
 - `1`: Two spans provided in the token are written by different authors.
 
-The main point of the current project is to capture the stylistic metrics of each author and incorporating these features into models to properly classify the given texts.
+The main point of the current project is to capture the stylistic metrics of each author and to incorporate these features into models to properly classify the given texts.
 
 ___
 
@@ -81,7 +81,7 @@ This combined representation is then passed through a classifier to predict whet
 
 ### Training and Validation
 The training data was divided into a training set and a validation set (validation size : 20%). 
-The total number of training sets was 22,557 and the total number of validation sets was 5,640.
+The size of the training set was 22,557 and the size of the validation set was 5,640.
 
 #### Optimizer and hyperparameters:
     - optimizer: AdamW
@@ -135,7 +135,7 @@ In addition to analyzing the ratio of false negative and false positive, an anal
 
 
 The density plots for both the average word length and average span length revealed patterns in the distribution of stylometric
-features among false positives (FP) and fasle negatives (FN).
+features among false positives (FP) and false negatives (FN).
 For average word length, the density plots show a similar trend. Among false positives, the distribution of `avg_word_len1` and `avg_word_len2` closely overlap with a peak around 4, indicating consistency in word length for spans misclassified as written by different authors. However, the false negatives showed
 slightly broader distributions, suggesting that the model has difficulty 
 distinguishing between spans with little variation in word length when spans are written by the same author.<br />
