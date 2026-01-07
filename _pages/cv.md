@@ -12,11 +12,22 @@ redirect_from:
 Education
 ======
 * Ph.D in Linguistics, University of Arizona, 2027 (expected)
-* M.S. in Human Language Technology, University of Arizona, 2025 (expected)
+* M.S. in Human Language Technology, University of Arizona, 2025
 * M.A. in English Linguistics, Hankuk University of Foreign Studies, Seoul, South Korea, 2022
 * B.A. in English, Hankuk University of Foreign Studies, Seoul, South Korea, 2020
 
-<!-- # Teaching Experience 📚
+# Teaching Experience 📚
+
+### **University of Arizona, Department of Linguistics**
+**Standalone Instructor**
+
+**LING439 - Statistical NLP**, Spring 2026
+- Designed and organized course materials and lectures
+- Word representations, Naive Bayes, Logistic regression
+
+**LING438 - Computational Linguistics**, Fall 2026
+- Designed and organized course materials and lectures
+- Regular Expression, Finite state automata, Regular grammar with Prolog
 
 ### **University of Arizona, Department of Linguistics**
 **Graduate Teaching Associate**  
@@ -38,7 +49,7 @@ Education
    
 ### **Hankuk Academy of Foreign Studies Camp**, Dec 2018 - Feb 2019  
 - Taught English writing and speaking to 6th graders  
-- Designed curriculum and coached students for debate competitions -->
+- Designed curriculum and coached students for debate competitions
 
 
 # Work Experience 💼
