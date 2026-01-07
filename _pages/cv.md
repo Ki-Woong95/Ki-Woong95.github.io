@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-[📄 Download My CV](../files/MKW_CV.pdf/) (last updated: May, 2025)
+[📄 Download My CV](../files/MKW_CV.pdf/) (last updated: Jan, 2026)
 
 Education
 ======
