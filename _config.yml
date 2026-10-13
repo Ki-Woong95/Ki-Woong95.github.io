@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Ki Woong Moon"
 title_separator          : "-"
 name                     : &name "Ki Woong Moon"
-description              : &description "PhD student in Linguistics at University of Arizona"
+description              : &description "Ph.D. candidate in Linguistics at the University of Arizona | Phonetics, computational linguistics, and speech technology"
 url                      : https://Ki-Woong95.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Ki-Woong95/Ki-Woong95.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Ki Woong Moon"
   avatar           : "MKW_PASSPORT.jpg"
-  bio              : "Ph.D. candidate in Linguistics ; M.S. in Human Language Technology"
+  bio              : "Ph.D. candidate in Linguistics · Phonetics & Computational Linguistics · M.S. in Human Language Technology"
   location         : "Tucson, Arizona"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=0FYFctkAAAAJ&hl=en"
-  email            :
+  email            : "kiwoongmoon@arizona.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

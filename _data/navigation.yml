@@ -1,13 +1,10 @@
-# main links links
+# Academic site navigation
 main:
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
+  - title: "About"
+    url: /
+  - title: "Research & Publications"
+    url: /research/
+  - title: "Teaching"
+    url: /teaching/
   - title: "CV"
     url: /cv/
-    
-  # - title: "Guide"
-  #   url: /markdown/

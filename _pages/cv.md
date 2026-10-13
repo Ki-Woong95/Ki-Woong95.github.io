@@ -1,100 +1,17 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
-  - /resume
+  - /resume/
 ---
 
-[📄 Download My CV](../files/MKW_CV.pdf/) (last updated: Jan, 2026)
+[**Download my academic CV (PDF)**]({{ '/files/MKW_CV.pdf' | relative_url }})  
+*Updated October 2026 · 3 pages*
 
-Education
-======
-* Ph.D in Linguistics, University of Arizona, 2027 (expected)
-* M.S. in Human Language Technology, University of Arizona, 2025
-* M.A. in English Linguistics, Hankuk University of Foreign Studies, Seoul, South Korea, 2022
-* B.A. in English, Hankuk University of Foreign Studies, Seoul, South Korea, 2020
+I am a Ph.D. candidate in Linguistics at the University of Arizona (**expected May 2027**), specializing in **Phonetics** and **Computational Linguistics**. I hold an M.S. in Human Language Technology (2025) from the University of Arizona and an M.A. in English Linguistics (2022) from Hankuk University of Foreign Studies.
 
-# Teaching Experience 📚
+The PDF includes publications and manuscripts, conference presentations, teaching, research and professional experience, awards, service, and technical skills.
 
-### **University of Arizona, Department of Linguistics**
-**Standalone Instructor**
-
-**LING439 - Statistical NLP**, Spring 2026
-- Designed and organized course materials and lectures
-- Word representations, Naive Bayes, Logistic regression
-
-**LING438 - Computational Linguistics**, Fall 2026
-- Designed and organized course materials and lectures
-- Regular Expression, Finite state automata, Regular grammar with Prolog
-
-### **University of Arizona, Department of Linguistics**
-**Graduate Teaching Associate**  
-**LING 150A – Language in the World**, Spring 2025  
-- Graded assignments and discussion posts  
-- Provided constructive feedback and held weekly office hours
-
-**Instructor**  
-**LING 201 – Introduction to Linguistics**, Summer 2024  
-- Designed and organized course materials and lectures  
-- Delivered weekly recordings and evaluated student performance
-
-### **Hankuk University of Foreign Studies, ELLT Department**
-**Teaching Assistant**  
-- *Computational Linguistics with Python*, Spring 2021  
-- *Language Data Analysis with R*, Fall 2021  
-  - Assisted students with hands-on projects and coursework
-
-   
-### **Hankuk Academy of Foreign Studies Camp**, Dec 2018 - Feb 2019  
-- Taught English writing and speaking to 6th graders  
-- Designed curriculum and coached students for debate competitions
-
-
-# Work Experience 💼
-
-## XRI Global
-**Speech Technology Intern**, Jan 2025 – Present  
-- Collected and processed multilingual speech data  
-- Fine-tuned ASR models for low-resource languages  
-- Explored techniques including data augmentation and transfer learning
-
-## Hankuk University of Foreign Studies, ELLT Department
-**Head Assistant of the Department**, Aug 2020 – Feb 2022  
-- Managed departmental responsibilities including graduation, internships, exchange programs, and course schedules
-
-
-# Research Experience 🔬
-
-## University of Arizona – Douglass Phonetics Lab
-**Graduate Research Assistant**, Aug 2022 – Jan 2025  
-Supervisor: Dr. Natasha Warner  
-- Organized lab meetings and conducted speech perception experiments  
-- Analyzed acoustic and behavioral data using statistical methods
-
-## Electronics and Telecommunications Research Institute (ETRI), Korea
-**Research Assistant**, multiple projects between 2020–2021  
-- Phoneme feature extraction for English-learning systems  
-- Evaluation of non-native speech and error tagging  
-- Built corpora for writing and speech assessment systems  
-
-## Hyundai Motor Company
-**Research Assistant**, Feb 2021 – Nov 2021  
-- Refined parallel corpora for improving machine translation systems  
-
-## National Information Society Agency (NIA), Korea
-**Research Assistant**, Sep 2020 – Dec 2020  
-- Constructed discourse-level NLP datasets for AI model training
-
-# Skills 🖥️
-## Technical Skills:
-  * Languages: Bash, Praat, Python, Perl, R
-  * ASR/Machine Learning tools: Hugging Face🤗, Kaldi, Pytorch, WandB
-  * General: LaTeX, MacOS, Linux(Ubuntu), Windows
-  * Areas: Acoustic phonetics (speech production and perception), statistical analysis, natural language processing, audio signal processing
-
-### Languages:
-  * Korean (native)
-  * English (proficient)
-  * Chinese (basic)
+You can also browse [Research & Publications]({{ '/research/' | relative_url }}) and [Teaching]({{ '/teaching/' | relative_url }}) online.
