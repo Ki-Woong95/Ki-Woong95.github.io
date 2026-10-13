@@ -30,4 +30,3 @@ Online introductory courses covering phonetics, phonology, morphology, syntax, a
 - **Computational Linguistics** — Teaching Assistant, Hankuk University of Foreign Studies, Spring 2021. Supported Python programming instruction and developed an NLTK tutorial.
 - **Language Data Analysis** — Teaching Assistant, Hankuk University of Foreign Studies, Fall 2021. Supported linguistic data analysis with R.
 
-For full details, see my [academic CV]({{ '/files/MKW_CV.pdf' | relative_url }}).

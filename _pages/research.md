@@ -62,4 +62,3 @@ As a graduate research assistant in the **Douglass Phonetics Lab**, I curated pr
 
 The datasets are hosted by the University of Arizona Research Data Repository. This work involved organizing previously collected responses, stimuli, and supporting documentation for public release.
 
-For a complete record of teaching, research experience, and awards, see my [academic CV]({{ '/files/MKW_CV.pdf' | relative_url }}).
