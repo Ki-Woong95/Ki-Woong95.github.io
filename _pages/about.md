@@ -22,7 +22,6 @@ In **phonetics**, I study how speech reduction varies with surrounding sounds an
 
 My longer-term research interests include comparing human and machine recognition of **spontaneous speech** and developing speech-language models that respond adaptively to different sources of uncertainty.
 
-[Research & publications]({{ '/research/' | relative_url }}) · [Teaching]({{ '/teaching/' | relative_url }}) · [Download CV]({{ '/files/MKW_CV.pdf' | relative_url }})
 
 ### Teaching and research experience
 
