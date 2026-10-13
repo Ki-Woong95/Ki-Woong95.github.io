@@ -13,13 +13,21 @@ My research connects **phonetics** and **computational linguistics**, with a foc
 
 I investigate how words change in spontaneous speech and how listeners recover words from reduced forms. My work on the English word *just* examines how neighboring sounds—particularly sibilants—and lexical predictability are associated with reduction. An ongoing perception study asks how listeners use sibilant and vowel duration across phonetic contexts.
 
-**Related work:** [Moon & Warner (2025), *Proceedings of Meetings on Acoustics*](https://doi.org/10.1121/2.0002080) · Perception study, accepted poster at the 191st ASA Meeting (2026)
+**Related work:** 
+
+[Moon & Warner (2025), *Proceedings of Meetings on Acoustics*](https://doi.org/10.1121/2.0002080) 
+
+Perception study (accepted poster at the 191st ASA Meeting (2026))
 
 ### Spontaneous-speech ASR and speech representations
 
 I study how computational models represent acoustic and phonetic variability. In a parameter-matched study using frozen HuBERT, adding a trainable fusion pathway improved recognition of spontaneous speech, but learned prosodic features did not yield a significant incremental gain over a capacity-matched control. Related work examines where phonetic variation becomes accessible across model layers.
 
-**Related work:** [Moon & Brenner, submitted to ICASSP 2027 (arXiv preprint)](https://arxiv.org/abs/2609.36754) · Moon & Warner, submitted to ICPhS 2027
+**Related work:** 
+
+[Moon & Brenner, submitted to ICASSP 2027 (arXiv preprint)](https://arxiv.org/abs/2609.36754) 
+
+Moon & Warner, submitted to ICPhS 2027
 
 ### Uncertainty and speech reasoning
 
