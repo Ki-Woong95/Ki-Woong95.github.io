@@ -8,6 +8,6 @@ redirect_from:
 ---
 
 [**Download my academic CV (PDF)**]({{ '/files/MKW_CV.pdf' | relative_url }})  
-*Updated October 2026 · 3 pages*
+*Updated October 2026 · 4 pages*
 
 
